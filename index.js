@@ -548,6 +548,7 @@ module.exports = async req => {
 			}else{
 				player[3] = color.color_3;
 				player[8] = adjectives.adjective_1;
+				player[4] = player[4].charAt(0).toUpperCase() + player[4].slice(1);
 				toText = player[2] + ', послушай хорошего совета. Не ссорься с ' + name_1.name_3 + '.  ' + player[4] + ' хороший, хоть и ' + player[8] + ' человек. Ну а если поссоришься, тогда сделай так, чтобы ' + player[4] + ' увидел' + word_1 + ', как ' + player[5] + ' ' + player[3] + ' цвета может ' + player[7] + ' и при этом в лапах будет ' + player[6] + '. Ну, или скажи ' + name_1.name_1 + ' что-нибудь доброе. Уж не знаю, что для тебя будет проще.';
 			}
 			if (request.command == 'да'){
